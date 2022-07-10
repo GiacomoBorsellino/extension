@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Change BG",
+    "version": "1.0",
+    "description": "add a custom bg on google.com",
+    "icons": {
+        "16": "./img/16.png",
+        "48": "./img/48.png",
+        "128": "./img/128.png"
+    },
+    "content_scripts": [
+        {
+        "matches": ["*://*/*"],
+        "js": ["./index.js"]
+        }
+    ]
+}
